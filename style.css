@@ -32,3 +32,77 @@ input {
     padding: 10px;
     width: 250px;
 }
+.expenses-section table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.expenses-section th,
+.expenses-section td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: left;
+}
+
+.expenses-section th {
+    background-color: lightblue;
+}
+
+.expenses-section tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.expenses-section tr:hover {
+    background-color: #ddd;
+}
+/* Advanced CSS Selectors */
+
+/* 1. Descendant selector */
+.expenses td {
+    font-size: 15px;
+}
+
+/* 2. Direct child selector */
+#add-expense > form {
+    padding: 10px;
+}
+
+/* 3. First-child selector */
+.expenses tr:first-child {
+    font-weight: bold;
+}
+
+/* 4. Negation selector */
+input:not([type="submit"]) {
+    border: 1px solid #888;
+}
+
+/* 5. Focus selector */
+input:focus {
+    outline: 2px solid blue;
+}
+.expenses table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.expenses th,
+.expenses td {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.expenses th {
+    background-color: lightblue;
+}
+
+.expenses tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.expenses tr:hover {
+    background-color: #ddd;
+}
+button {
+    cursor: pointer;
+}
